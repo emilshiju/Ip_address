@@ -6,8 +6,8 @@ export async function GET(request) {
 
   console.log("Client IP:", ip);
 
-  
-  return new Response(JSON.stringify({ success: true }), {
+
+  return new Response(JSON.stringify({ success: ip }), {
     status: 200, // HTTP status code for success
     headers: {
       "Content-Type": "application/json",
